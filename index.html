@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompecabezas de Arrastrar y Soltar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="puzzle-container"></div>
+    <div id="timer">Tiempo restante: 60</div>
+    <div id="completion-time"></div>
+    <audio id="success-sound" src="sound/win.mp3" preload="auto"></audio>
+    <audio id="fail-sound" src="sound/fail.mp3" preload="auto"></audio>
+
+    <!-- Modal para cuando pierde -->
+    <div id="lose-modal" class="modal">
+        <div class="modal-content">
+            <p>Has perdido, se acabó el tiempo</p>
+            <button id="restart-button-lose">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Modal para cuando gana -->
+    <div id="win-modal" class="modal">
+        <div class="modal-content">
+            <p id="win-message"></p>
+            <button id="restart-button-win">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
