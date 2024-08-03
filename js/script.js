@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     restartButtonWin.addEventListener("click", restartGame);
 
     function createPuzzle() {
-        const image = "img/puzzle.png";
+        const image = "img/girasol.png";
 
         puzzleContainer.innerHTML = "";
         pieces = [];
